@@ -281,9 +281,29 @@ font-size: 14px;
     transform: translateY(-3px);
 }
 
-/*=======================*/
-/* ====== RODAPÉ ======= */
-/*=======================*/
+/*============================*/
+/* ====== TECNOLOGIAS ======= */
+/*============================*/
+
+.tecnologias
+{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tecnologias span
+{
+    background-color: #262636;
+    color: #bdbdc9;
+    pad: 5px 10%;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+/*=========================*/
+/* ====== PROJETOS ======= */
+/*=========================*/
 
 .projetos-secao
 {
