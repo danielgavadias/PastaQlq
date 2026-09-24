@@ -71,7 +71,7 @@ nav a
 
 nav a:hover
 {
-    color: #7c5cff;
+    color: #636B2F;
 }
 
 /*======================*/
@@ -94,7 +94,7 @@ nav a:hover
 
 .apresentacao
 {
-    color:#7c5cff;
+    color:#636B2F;
     font-size: 70px;
     line-height: 1.1;
     font-weight: bold;
@@ -136,7 +136,7 @@ nav a:hover
 .botao
 {
     display: inline-block;
-    background-color: #7c5cff;
+    background-color: #636B2F;
     color: #ffffff;
     padding: 13px 25px;
     border-radius: 7px;
@@ -146,6 +146,151 @@ nav a:hover
 
 .botao:hover
 {
-    background-color: #7c5cff;
+    background-color: #636B2F;
     transform: translateY(-3px);
+}
+
+.botao-secundario
+{
+    background-color: transparent;
+    border: 1px solid #636B2F;
+    color: #636B2F;
+}
+
+.botao-secundario:hover
+{
+    color: #ffffff;
+    background-color: #636B2F;
+}
+
+/*======================*/
+/* ====== SEÇÕES ====== */
+/*======================*/
+
+section
+{
+    padding: 100px 10%;
+}
+
+.titulo-secao
+{
+    margin-bottom: 50px;
+}
+
+.titulo-secao p
+{
+    color: #636B2F;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2
+{
+    font-size: 38px;
+}
+
+/*======================*/
+/* ====== SOBRE ======= */
+/*======================*/
+
+.sobre 
+{
+    background-color: #15151d;
+}
+
+.sobre-conteudo
+{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre-texto
+{
+    flex: 1; 
+    color: #666666;
+}
+
+.sobre-texto p 
+{
+    margin-bottom: 20px;
+}
+
+.habilidades
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.habilidade
+{
+    background-color: #1d1d27;
+    padding: 20px;
+    border-radius: 7px;
+    border-left: 4px solid #636B2F;;
+}
+
+.habilidade h3
+{
+    margin-top: 5px;
+}
+
+.habilidade p
+{
+color: #9292a0;
+font-size: 14px;
+}
+
+/*========================*/
+/* ====== CONTATO ======= */
+/*========================*/
+
+.contato
+{
+    background-color: #15151d;
+    text-align: center;
+}
+
+.contato .titulo-secao
+{
+    margin-bottom: 20px;
+}
+
+.contato-texto
+{
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #9c9cab;
+}
+
+.contato-links
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px
+}
+
+.contato-links:hover
+{
+    border-color: #636B2F;
+    color: #636B2F;
+    transform: translateY(-3px);
+}
+
+/*=======================*/
+/* ====== RODAPÉ ======= */
+/*=======================*/
+
+footer
+{
+    padding: 25px 10%;
+    background-color: #0b0b10;
+    color: #737380;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;    
 }
