@@ -1,5 +1,6 @@
-
+/*====================================*/
 /* ====== CONFIGURAÇÕES GERAIS ====== */ 
+/*===================================*/
 
 *
 {
@@ -27,7 +28,9 @@ a
     color: inherit;
 }
 
+/*====================*/
 /* ====== MENU ====== */
+/*====================*/
 
 header
 {
@@ -71,9 +74,78 @@ nav a:hover
     color: #7c5cff;
 }
 
+/*======================*/
 /* ====== INÍCIO ====== */
+/*======================*/
 
 .inicio
 {
     min-height: calc(100vh - 80px);
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    background-color: #0f0f14;
+}
+
+.inicio-conteudo
+{
+    max-width: 750px;
+}
+
+.apresentacao
+{
+    color:#7c5cff;
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inicio h1
+{
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.inicio h2
+{
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #9c9cab;
+}
+
+.descricao
+{
+    max-width: 600px;
+    color: #9c9cab;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+/*======================*/
+/* ====== BOTÕES ====== */
+/*======================*/
+
+.botoes
+{
+    display: flex;
+    gap: 15px;
+}
+
+.botao
+{
+    display: inline-block;
+    background-color: #7c5cff;
+    color: #ffffff;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3;
+}
+
+.botao:hover
+{
+    background-color: #7c5cff;
+    transform: translateY(-3px);
 }
