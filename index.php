@@ -87,10 +87,10 @@
                         <p>Estilizações e criações de interface</p>
                     </div>
 
-                    <!-- div class="habilidade">
+                    <div class="habilidade">
                         <h3>PHP</h3>
-                        <p>Estilizações e criações de interface</p>
-                    </div -->
+                        <p>pe aga pe</p>
+                    </div>
                 
                 </div>
             </div>
@@ -149,7 +149,7 @@
             <div class="card">
                     
                     <div class="numero-projeto">
-                        01
+                        02
                     </div>
                    
                     <h3>Sistema de cadastros</h3>
@@ -169,7 +169,7 @@
             <div class="card">
                     
                     <div class="numero-projeto">
-                        01
+                        03
                     </div>
                    
                     <h3>Sistema de cadastros</h3>

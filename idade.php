@@ -25,7 +25,7 @@
 <header>
 
     <h2><?= "Você tem ", $idade, "anos!" ?></h2>
-    <h3><?= "logo, ", $resposta ?></h3>
+    <h3><?= "logo, é ", $resposta ?></h3>
 
 </header>
 
