@@ -1,6 +1,6 @@
 <?php 
 
-    $idade = 45;
+    $idade;
 
     if($idade >= 18)
     {
@@ -24,7 +24,22 @@
 
 <header>
 
-    <h2><?= "Você tem ", $idade, "anos!" ?></h2>
+<section class="inserirIdade">
+        <h1>
+            Insira sua idade!            
+        </h1>
+        <form>
+            <label>Idade: </label>
+            
+            <input type="number">
+            <button type="submit"> CADASTRAR </button>
+
+        </form>
+
+    </section>
+
+
+    <h2><?= "Você tem ", $idade, " anos!" ?></h2>
     <h3><?= "logo, é ", $resposta ?></h3>
 
 </header>
