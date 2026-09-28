@@ -13,8 +13,6 @@
         $resultado = "De menor!";
     }
 
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -31,8 +29,8 @@
     <header>
        
         <div class="logo">
-        <h2> <?= $resultado ?></h2>   
-        <!-- <h3>Daniel <span>Gava Dias</span></h3> -->
+   
+        <h3>Daniel <span>Gava Dias</span></h3>
         </div>
 
         <nav>
@@ -162,7 +160,7 @@
                         <span>CSS</span>
                         <!-- <span>PHP</span> -->
                     </div>
-                    <a href="cadastro.html">Ver projetos</a>
+                    <a href="idade.html">Ver projetos</a>
                 </div>
            </div>
         </section>
