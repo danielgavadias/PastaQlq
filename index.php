@@ -6,11 +6,11 @@
 
     if($idade >= 18 )
     {
-        $resultado = "É de maior!";
+        $resultado = "De maior!";
     }
     else
     {
-        $resultado = "É de menor!";
+        $resultado = "De menor!";
     }
 
 
