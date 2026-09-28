@@ -152,15 +152,15 @@
                         02
                     </div>
                    
-                    <h3>Sistema de cadastros</h3>
-                    <p>Desrição do sistema de cadastros</p>
+                    <h3>Sistema de verificação de idade</h3>
+                    <p>Desrição do sistema de verificação de idade</p>
 
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
                         <!-- <span>PHP</span> -->
                     </div>
-                    <a href="idade.html">Ver projetos</a>
+                    <a href="idade.php">Ver projetos</a>
                 </div>
            </div>
         </section>
