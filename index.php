@@ -13,6 +13,8 @@
         $resultado = "De menor!";
     }
 
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

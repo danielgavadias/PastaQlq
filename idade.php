@@ -22,10 +22,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de idade</title>
+    <link rel="stylesheet" href="p2.css">
 </head>
 
 <body>
-  
+    
     <form method="POST">
 
     <label >nome</label>
@@ -39,7 +40,6 @@
     </form>
     
     
-
     
     <h1>
         <?=$nome?> tem <?=$idade?>.
