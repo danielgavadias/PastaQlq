@@ -1,3 +1,10 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
 header
 {
     height: 80px;
@@ -10,4 +17,14 @@ header
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+.logo h2
+{
+    font-size: 26px;
+}
+
+.logo span
+{
+    color: #636B2F;
 }
