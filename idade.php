@@ -25,6 +25,14 @@
     <link rel="stylesheet" href="idade.css">
 </head>
 
+<header>
+
+    <nav>
+         <a href="#voltar">Voltar</a> 
+    </nav>
+
+</header>
+
 
 
 <body>
@@ -34,10 +42,12 @@
     <label >Nome: </label>
     <br>
     <input type="text" id="nome" name="nome">
+    <br>
   
     <label >Idade: </label>
     <br>
     <input type="number" id="idade" name="idade">
+    <br>
 
     <button type="submit">CADASTRAR</button>
 
@@ -47,7 +57,7 @@
     <div class="conclusao">
     
     <h1>
-        <?=$nome?> tem <?=$idade?>.
+        <?=$nome?> tem <?=$idade?> anos de idade.
     </h1>
     
     <h2>
