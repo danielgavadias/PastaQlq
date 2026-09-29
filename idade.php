@@ -42,31 +42,31 @@
 <body>
     
     <form method="POST">
-
-    <label >Nome: </label>
-    <br>
-    <input type="text" id="nome" name="nome">
-    <br>
-  
-    <label >Idade: </label>
-    <br>
-    <input type="number" id="idade" name="idade">
-    <br>
-
-    <button type="submit">CADASTRAR</button>
+    
+        <label >Nome: </label>
+        <br>
+        <input type="text" id="nome" name="nome">
+        <br>
+    
+        <label >Idade: </label>
+        <br>
+        <input type="number" id="idade" name="idade">
+        <br>
+    
+        <button type="submit">CADASTRAR</button>
 
     </form>
     
     
     <div class="conclusao">
     
-    <h1>
-        <?=$nome?> tem <?=$idade?> anos de idade.
-    </h1>
-    
-    <h2>
-        Portanto, é <?=$resposta?>!
-    </h2>
+        <h1>
+            <?=$nome?> tem <?=$idade?> anos de idade.
+        </h1>
+
+        <h2>
+            Portanto, é <?=$resposta?>!
+        </h2>
 
     </div>
     

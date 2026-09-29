@@ -1,5 +1,5 @@
 <?php
-    // $nome = "Rosalind";
+
     $idade = 15;
     $altura = 1.65;
     $matricula = true;
@@ -160,7 +160,7 @@
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!-- <span>PHP</span> -->
+                        <span>PHP</span>
                     </div>
                     <a href="idade.php">Ver projetos</a>
                 </div>
