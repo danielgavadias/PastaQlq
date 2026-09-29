@@ -2,6 +2,7 @@
 {
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -22,9 +23,12 @@ header
 .logo h2
 {
     font-size: 26px;
+    text-decoration: none;
+    
 }
 
 .logo span
 {
     color: #636B2F;
+    text-decoration: none;
 }
