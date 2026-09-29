@@ -22,32 +22,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de idade</title>
-    <link rel="stylesheet" href="p2.css">
+    <link rel="stylesheet" href="idade.css">
 </head>
 
-<header>
 
-<header>
-       
-       <div class="logo">
-  
-       <h3>Daniel <span>Gava Dias</span></h3>
-       </div>
-
-       <nav>
-           <a href="#inicio">Inicio</a>
-   </header>
-
-</header>
 
 <body>
     
     <form method="POST">
 
-    <label >nome</label>
+    <label >Nome: </label>
+    <br>
     <input type="text" id="nome" name="nome">
   
-    <label >idade</label>
+    <label >Idade: </label>
+    <br>
     <input type="number" id="idade" name="idade">
 
     <button type="submit">CADASTRAR</button>
@@ -55,6 +44,7 @@
     </form>
     
     
+    <div class="conclusao">
     
     <h1>
         <?=$nome?> tem <?=$idade?>.
@@ -63,6 +53,9 @@
     <h2>
         Portanto, é <?=$resposta?>!
     </h2>
+
+    </div>
+    
 
     
   
