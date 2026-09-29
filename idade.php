@@ -26,8 +26,8 @@
 
 <body>
   
-    <form method="POST"></form>
-    
+    <form method="POST">
+
     <label >nome</label>
     <input type="text" id="nome" name="nome">
   
@@ -35,11 +35,16 @@
     <input type="number" id="idade" name="idade">
 
     <button type="submit">CADASTRAR</button>
+
+    </form>
+    
+    
+
     
     <h1>
         <?=$nome?> tem <?=$idade?>.
     </h1>
-    <br>
+    
     <h2>Portanto, é <?=$resposta?>!</h2>
 
     
