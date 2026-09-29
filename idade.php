@@ -25,6 +25,21 @@
     <link rel="stylesheet" href="p2.css">
 </head>
 
+<header>
+
+<header>
+       
+       <div class="logo">
+  
+       <h3>Daniel <span>Gava Dias</span></h3>
+       </div>
+
+       <nav>
+           <a href="#inicio">Inicio</a>
+   </header>
+
+</header>
+
 <body>
     
     <form method="POST">
@@ -45,7 +60,9 @@
         <?=$nome?> tem <?=$idade?>.
     </h1>
     
-    <h2>Portanto, é <?=$resposta?>!</h2>
+    <h2>
+        Portanto, é <?=$resposta?>!
+    </h2>
 
     
   
