@@ -28,7 +28,7 @@
 <header>
 
     <div class="logo">  
-        <h3>Daniel <span>Gava Dias</span></h3>
+        <h2>Daniel <span>Gava Dias</span></h2>
     </div>
 
     <nav>
