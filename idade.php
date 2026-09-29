@@ -1,6 +1,7 @@
 <?php 
 
-    $idade;
+    $idade = $_POST["idade"];
+    $nome = $_POST["nome"];
 
     if($idade >= 18)
     {
@@ -14,6 +15,7 @@
 ?>
 
 <!-- ============== *CÓDIGO HTML* ============== -->
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -22,29 +24,16 @@
     <title>Verificador de idade</title>
 </head>
 
-<header>
-
-<section class="inserirIdade">
-        <h1>
-            Insira sua idade!            
-        </h1>
-        <form>
-            <label>Idade: </label>
-            
-            <input type="number">
-            <button type="submit"> CADASTRAR </button>
-
-        </form>
-
-    </section>
-
-
-    <h2><?= "Você tem ", $idade, " anos!" ?></h2>
-    <h3><?= "logo, é ", $resposta ?></h3>
-
-</header>
-
 <body>
+  
+    <form method="POST"></form>
     
+    <label >nome</label>
+    <input type="text" id="nome" name="nome">
+  
+    <label >idade</label>
+    <input type="number" id="idade" name="idade">
+  
 </body>
+
 </html>
