@@ -33,6 +33,12 @@
   
     <label >idade</label>
     <input type="number" id="idade" name="idade">
+
+    <h1>
+        <?=$nome?> tem <?=$idade?>.
+    </h1>
+    <br>
+    <h2>Portanto, é <?=$resposta?>!</h2>
   
 </body>
 
