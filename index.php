@@ -1,21 +1,4 @@
-<?php
 
-    $idade = 15;
-    $altura = 1.65;
-    $matricula = true;
-
-    if($idade >= 18 )
-    {
-        $resultado = "De maior!";
-    }
-    else
-    {
-        $resultado = "De menor!";
-    }
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -187,13 +170,5 @@
            </div>
         </section>
 <!--==================================================================================================================================== -->
-        <section>
-
-
-
-
-
-
-        </section>
 </body>
 </html>
