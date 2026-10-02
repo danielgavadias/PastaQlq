@@ -61,6 +61,7 @@
     <label>Nome: </label>
     <input type="text" name="nome" required>
     <br><br>
+    <label>Idade: </label>
     <input type="number" name="idade" required>
     <br><br>
 
@@ -86,7 +87,7 @@
     <input type="number" name="matematica_prova3" min="0" max="10" step="0.1" required>
     <br><br>
 
-    <h2>MATEMÁTICA</h2>
+    <h2>BIOLOGIA</h2>
     <label>Prova 1:</label>
     <input type="number" name="biologia_prova1" min="0" max="10" step="0.1" required>
     <br><br>
