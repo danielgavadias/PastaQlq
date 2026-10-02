@@ -157,13 +157,13 @@
                         03
                     </div>
                    
-                    <h3>Sistema de cadastros</h3>
-                    <p>Desrição do sistema de cadastros</p>
+                    <h3>Persistencia de Dados</h3>
+                    <p>AULA DE JSON</p>
 
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!-- <span>PHP</span> -->
+                        <span>PHP</span>
                     </div>
                     <a href="cadastro.html">Ver projetos</a>
                 </div>
