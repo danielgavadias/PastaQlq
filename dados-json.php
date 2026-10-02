@@ -98,6 +98,9 @@
     <input type="number" name="biologia_prova3" min="0" max="10" step="0.1" required>
     <br><br>
 
+    <label>CADASTRAR:</label>
+    <input type="button" name="botao">
+
 
 
 
