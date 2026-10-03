@@ -69,7 +69,7 @@
     );
 
     //SALVAR NO ARQUIVO JSON
-    file_put_contents(__DIR__. "/dados/intro.json", $jsonAtualizado)
+    file_put_contents(__DIR__. "/dados/intro.json", $jsonAtualizado);
 }
 
 //LEITURA DOS DADOS P/ EXIBIÇÃO
