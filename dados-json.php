@@ -32,21 +32,20 @@
                 "prova1" => $portugues_prova1,
                 "prova2" => $portugues_prova2,
                 "prova3" => $portugues_prova3,
-                 ]
+            ],
 
             "matematica" =>[
                 "prova1" => $matematica_prova1,
                 "prova2" => $matematica_prova2,
                 "prova3" => $matematica_prova3,
-                ]
+            ],
 
             "biologia" =>[
                 "prova1" => $biologia_prova1,
                 "prova2" => $biologia_prova2,
                 "prova3" => $biologia_prova3,
-                ],
+            ],
         ],
-
 
     ];
     
