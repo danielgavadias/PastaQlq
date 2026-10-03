@@ -5,23 +5,23 @@
     
     {
     
-    $nome = $POST_["nome"];
-    $idade = $POST_["idade"];
+    $nome = $_POST["nome"];
+    $idade = $_POST["idade"];
 
     // RECEBE NOTAS PORTUGUÊS
-    $portugues_prova1 = $POST_["portugues_prova1"];
-    $portugues_prova2 = $POST_["portugues_prova2"];
-    $portugues_prova3 = $POST_["portugues_prova3"];
+    $portugues_prova1 = $_POST["portugues_prova1"];
+    $portugues_prova2 = $_POST["portugues_prova2"];
+    $portugues_prova3 = $_POST["portugues_prova3"];
 
     // RECEBE NOTAS PORTUGUÊS
-    $matematica_prova1 = $POST_["matematica_prova1"];
-    $matematica_prova2 = $POST_["matematica_prova2"];
-    $matematica_prova3 = $POST_["matematica_prova3"];
+    $matematica_prova1 = $_POST["matematica_prova1"];
+    $matematica_prova2 = $_POST["matematica_prova2"];
+    $matematica_prova3 = $_POST["matematica_prova3"];
 
     // RECEBE NOTAS BIOLOGIA
-    $biologia_prova1 = $POST_["biologia_prova1"];
-    $biologia_prova2 = $POST_["biologia_prova2"];
-    $biologia_prova3 = $POST_["biologia_prova3"];
+    $biologia_prova1 = $_POST["biologia_prova1"];
+    $biologia_prova2 = $_POST["biologia_prova2"];
+    $biologia_prova3 = $_POST["biologia_prova3"];
 
     $novoAluno = [
         "nome" => $nome,
@@ -51,7 +51,7 @@
 
     //LER/ABRIR ARQUIVOS NO JSON
 
-    $conteudoJson = file_get_contents(__DIR__."dados/intro.json");
+    $conteudoJson = file_get_contents(__DIR__."/dados/intro.json");
     
     //SERVE PARA CONVERTER JSON PARA ARRAY PARA PHP
     //O TRUE CONVERTE O JSON EM ARRAY ASSOCIATIVO PARA PHP LER   
