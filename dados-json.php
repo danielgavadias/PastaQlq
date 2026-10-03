@@ -93,7 +93,7 @@ $alunos = json_decode($conteudoJson, true);
 </head>
 
 <body>
-    <form>
+    <form method="POST">
     <h1>CADASTRO DE NOTAS</h1>
     <label>Nome: </label>
     <input type="text" name="nome" required>
