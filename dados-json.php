@@ -48,30 +48,39 @@
         ],
 
     ];
+
+    //LER/ABRIR ARQUIVOS NO JSON
+
+    $conteudoJson = file_get_contents(__DIR__."dados/intro.json"),
     
+    //SERVE PARA CONVERTER JSON PARA ARRAY PARA PHP
+    //O TRUE CONVERTE O JSON EM ARRAY ASSOCIATIVO PARA PHP LER   
+    $alunos = json_decode($conteudoJson, true);
+
+    //ADICIONAR O NOVO ALUNO
+    $alunos[] = $novoAluno;
+    
+    //CONVERTER O ARRAY PHP PARA JSON
+    $jsonAtualizado = json_encode(
+        $alunos,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+        //1 - FORMATA DE FORMABONITA
+        //2 - ENTENDE OS CARACTERES ESPECIAIS
+    );
+
+    //SALVAR NO ARQUIVO JSON
+    file_put_contents(__DIR__. "/dados/intro.json", $jsonAtualizado)
+}
+
+//LEITURA DOS DADOS P/ EXIBIÇÃO
+
+//LÊ O ARQUIVO JSON
+$conteudoJson = file_get_contents(__DIR__. "/dados/intro.json");
+
+//CONVERTE O JSON PARA ARRAY PHP
+$alunos = json_decode($conteudoJson, true);
 
 
-        echo "<h2> DADOS RECEBIDOS: </h2>";
-
-        echo "Nome: " . $nome . "<br>";
-        echo "Idade: " . $idade . "<br><br>";
-
-        echo "<strong>Português: </strong><br>";
-        echo "Prova 1:" . $portugues_prova1 . "<br>";
-        echo "Prova 2:" . $portugues_prova2 . "<br>";
-        echo "Prova 3:" . $portugues_prova3 . "<br><br>";
-
-        echo "<strong>Matemática: </strong><br>";
-        echo "Prova 1:" . $matematica_prova1 . "<br>";
-        echo "Prova 2:" . $matematica_prova2 . "<br>";
-        echo "Prova 3:" . $matematica_prova3 . "<br><br>";
-
-        echo "<strong>Biologia: </strong><br>";
-        echo "Prova 1:" . $biologia_prova1 . "<br>";
-        echo "Prova 2:" . $biologia_prova2 . "<br>";
-        echo "Prova 3:" . $biologia_prova3 . "<br><br>";
-
-    }
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +93,7 @@
 </head>
 
 <body>
+    <form>
     <h1>CADASTRO DE NOTAS</h1>
     <label>Nome: </label>
     <input type="text" name="nome" required>
@@ -124,19 +134,41 @@
     <label>Prova 3:</label>
     <input type="number" name="biologia_prova3" min="0" max="10" step="0.1" required>
     <br><br>
+    <button type="submit">ENVIAR</button>
+    </form>
 
-    <label>CADASTRAR:</label>
-    <input type="button" name="botao">
+    <H1>ALUNOS CADASTRADOS</H1>
+
+    <?php foreach($alunos as $aluno) {?>
+
+        <h2> <?= $aluno ["nome"] ?> </h2>
+        <p> Idade <?=$aluno["idade"]?> </p>
+
+        <!--PORTUGUÊ<S-->
+        <H2>PORTUGUÊS</H2>
+        <p>Prova 1: <?= $aluno["notas"]["portugues"]["prova1"]?></p>
+        <p>Prova 2: <?= $aluno["notas"]["portugues"]["prova2"]?></p>
+        <p>Prova 3: <?= $aluno["notas"]["portugues"]["prova3"]?></p>
+
+        <!--MATEMÁTICA<S-->
+        <H2>MATEMÁTICA</H2>
+        <p>Prova 1: <?= $aluno["notas"]["matematica"]["prova1"]?></p>
+        <p>Prova 2: <?= $aluno["notas"]["matematica"]["prova2"]?></p>
+        <p>Prova 3: <?= $aluno["notas"]["matematica"]["prova3"]?></p>
+
+        <!--BIOLOGIA<S-->
+        <H2>BIOLOGIA</H2>
+        <p>Prova 1: <?= $aluno["notas"]["biologia"]["prova1"]?></p>
+        <p>Prova 2: <?= $aluno["notas"]["biologia"]["prova2"]?></p>
+        <p>Prova 3: <?= $aluno["notas"]["biologia"]["prova3"]?></p>
 
 
+    <?php};?>
 
+    
+   
 
-
-
-
-
-
-
+    
 
 </body>
 </html>
