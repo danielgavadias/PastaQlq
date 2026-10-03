@@ -51,7 +51,7 @@
 
     //LER/ABRIR ARQUIVOS NO JSON
 
-    $conteudoJson = file_get_contents(__DIR__."dados/intro.json"),
+    $conteudoJson = file_get_contents(__DIR__."dados/intro.json");
     
     //SERVE PARA CONVERTER JSON PARA ARRAY PARA PHP
     //O TRUE CONVERTE O JSON EM ARRAY ASSOCIATIVO PARA PHP LER   
@@ -163,7 +163,7 @@ $alunos = json_decode($conteudoJson, true);
         <p>Prova 3: <?= $aluno["notas"]["biologia"]["prova3"]?></p>
 
 
-    <?php};?>
+    <?php } ?>
 
     
    
