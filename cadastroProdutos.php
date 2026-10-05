@@ -1,5 +1,7 @@
 <?php
 
+    if($_SERVER["REQUEST_METHOD"]=="POST")
+
     $nomeP = $_POST["nomeP"];
     $categoria = $_POST["categoria"];
     $marca = $_POST["marca"];
@@ -95,7 +97,7 @@
     <p>Marca: <?= $produto ["marca"] ?> </p>
     <p>produto: <?= $produto ["nomeP"] ?> </p>
     <p>Preço: <?= $produto ["preco"] ?> </p>
-    <p>uQuantidade em estoque: <?= $produto ["qtdEstoque"] ?> </p>
+    <p>Quantidade em estoque: <?= $produto ["qtdEstoque"] ?> </p>
     <br><br>
 
 
