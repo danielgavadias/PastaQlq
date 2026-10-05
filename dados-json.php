@@ -139,7 +139,7 @@ $alunos = json_decode($conteudoJson, true);
     
     </form>
 
-    <H1>ALUNOS CADASTRADOS</H1>
+    <H1>ALUNOS CADASTRADOS: </H1>
 
     <?php foreach($alunos as $aluno) {?>
 

@@ -1,7 +1,7 @@
 <?php
 
     $nomeP = $_POST["nomeP"];
-        $categoria = $_POST["categoria"];
+    $categoria = $_POST["categoria"];
     $marca = $_POST["marca"];
     $preco = $_POST["preco"];
     $qtdEstoque = $_POST["qtdEstoque"];
@@ -34,8 +34,6 @@
     file_put_contents(__DIR__. "/dados/cadastroProdutos.json", $jsonAtualizado);
     $conteudoJson = file_get_contents(__DIR__. "/dados/intro.json");
     $alunos = json_decode($conteudoJson, true);
-
-
 
 ?>
 
@@ -87,6 +85,18 @@
     
     <button type="submit">ENVIAR</button>
 
+    <h1>PRODUTOS CADASTRADOS: </h1>
+
+    <?php foreach ($produtos as $produto) {?>
+
+    <p>Fabricante: <?= $produto ["nomeF"] ?> </p>
+    <p>País de Origem: <?= $produto ["pais"] ?> </p>
+    <p>Marca: <?= $produto ["marca"] ?> </p>
+    <p>produto: <?= $produto ["nomeP"] ?> </p>
+    <p>Preço: <?= $produto ["preco"] ?> </p>
+    <p>uQuantidade em estoque: <?= $produto ["qtdEstoque"] ?> </p>
+
+
    
    
    
@@ -98,7 +108,7 @@
    
    
    
-   
+   <?php } ?>
    
     </form>
 </body>
