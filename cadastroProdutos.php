@@ -19,8 +19,21 @@
         "Fabricante" => [
             "nomeF" => $nomeF,
             "pais" => $pais,
-        ]
-    ]
+        ],
+    ];
+
+    $conteudoJson = file_get_contents(__DIR__."/dados/cadastroProdutos.json");
+    $produtos = json_decode($conteudoJson, true);
+    $produtos[] = $novoProduto;
+    
+    $jsonAtualizado = json_encode(
+        $produtos,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
+
+    file_put_contents(__DIR__. "/dados/cadastroProdutos.json", $jsonAtualizado);
+    $conteudoJson = file_get_contents(__DIR__. "/dados/intro.json");
+    $alunos = json_decode($conteudoJson, true);
 
 
 
@@ -33,6 +46,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Produtos</title>
+    <link >
 </head>
 
 

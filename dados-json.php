@@ -54,7 +54,7 @@
     $conteudoJson = file_get_contents(__DIR__."/dados/intro.json");
     
     //SERVE PARA CONVERTER JSON PARA ARRAY PARA PHP
-    //O TRUE CONVERTE O JSON EM ARRAY ASSOCIATIVO PARA PHP LER   
+    //O TRUE CONVERTE O JSON EM ARRAY ASSOCIATIVO PARA O PHP LER   
     $alunos = json_decode($conteudoJson, true);
 
     //ADICIONAR O NOVO ALUNO
