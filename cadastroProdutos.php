@@ -40,15 +40,14 @@
 <body>
     <form method="POST">
 
+    <h1>CADASTRO DE PRODUTOS</h1>
+    
     
     <br><h2>INSIRA AS CARACTERÍSTICAS DO FABRICANTE: </h2><br>
 
     <p>Nome da fabricante: <input type="text" name="nomeF"> </p>
     
     <p>País de Origem <input type="text" name="pais"> </p>
-
-    <h1>CADASTRO DE PRODUTOS</h1>
-
     
     <br><h2>INSIRA AS CARACTERÍSTICAS DO PRODUTO: </h2><br>
      
