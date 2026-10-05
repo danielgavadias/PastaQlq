@@ -45,19 +45,31 @@
     
     <br><h2>INSIRA AS CARACTERÍSTICAS DO FABRICANTE: </h2><br>
 
-    <p>Nome da fabricante: <input type="text" name="nomeF"> </p>
+    <p>Nome da fabricante: 
+        <input type="text" name="nomeF"> 
+    </p>
     
-    <p>País de Origem <input type="text" name="pais"> </p>
+    <p>País de Origem 
+        <input type="text" name="pais"> 
+    </p>
     
     <br><h2>INSIRA AS CARACTERÍSTICAS DO PRODUTO: </h2><br>
      
-    <p>Nome do produto: <input type="text" name="nomeP"> </p>
+    <p>Nome do produto: 
+        <input type="text" name="nomeP"> 
+    </p>
 
-    <p>Marca: <input type="text" name="marca"> </p>
+    <p>Marca: 
+        <input type="text" name="marca"> 
+    </p>
 
-    <p>Preço: <input type="number" name="preco"> </p>
+    <p>Preço: 
+        <input type="number" name="preco"  min="0" step="0.1" required> 
+    </p>
 
-    <p>Quantidade em estoque: <input type="number" name="qtdEstoque"> </p>
+    <p>Quantidade em estoque: 
+        <input type="number" name="qtdEstoque" min="0" step="0.1" required> 
+    </p>
     
     <button type="submit">ENVIAR</button>
 
