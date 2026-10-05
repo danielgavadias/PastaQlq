@@ -63,7 +63,7 @@
         <input type="text" name="nomeF"> 
     </p>
     
-    <p>País de Origem 
+    <p>País de Origem: 
         <input type="text" name="pais"> 
     </p>
     
