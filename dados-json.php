@@ -64,7 +64,7 @@
     $jsonAtualizado = json_encode(
         $alunos,
         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
-        //1 - FORMATA DE FORMABONITA
+        //1 - FORMATA DE FORMA BONITA
         //2 - ENTENDE OS CARACTERES ESPECIAIS
     );
 
@@ -134,7 +134,9 @@ $alunos = json_decode($conteudoJson, true);
     <label>Prova 3:</label>
     <input type="number" name="biologia_prova3" min="0" max="10" step="0.1" required>
     <br><br>
+    
     <button type="submit">ENVIAR</button>
+    
     </form>
 
     <H1>ALUNOS CADASTRADOS</H1>
@@ -163,12 +165,7 @@ $alunos = json_decode($conteudoJson, true);
         <p>Prova 3: <?= $aluno["notas"]["biologia"]["prova3"]?></p>
 
 
-    <?php } ?>
-
-    
-   
-
-    
+    <?php } ?>  
 
 </body>
 </html>
