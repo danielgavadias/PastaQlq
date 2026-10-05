@@ -64,11 +64,11 @@
     </p>
 
     <p>Preço: 
-        <input type="number" name="preco"  min="0" step="0.1" required> 
+        <input type="number" name="preco"  min="0" step="0.01" required> 
     </p>
 
     <p>Quantidade em estoque: 
-        <input type="number" name="qtdEstoque" min="0" step="0.1" required> 
+        <input type="number" name="qtdEstoque" min="0" required> 
     </p>
     
     <button type="submit">ENVIAR</button>
