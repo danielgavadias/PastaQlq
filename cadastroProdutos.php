@@ -89,12 +89,14 @@
 
     <?php foreach ($produtos as $produto) {?>
 
+    <br><br>
     <p>Fabricante: <?= $produto ["nomeF"] ?> </p>
     <p>País de Origem: <?= $produto ["pais"] ?> </p>
     <p>Marca: <?= $produto ["marca"] ?> </p>
     <p>produto: <?= $produto ["nomeP"] ?> </p>
     <p>Preço: <?= $produto ["preco"] ?> </p>
     <p>uQuantidade em estoque: <?= $produto ["qtdEstoque"] ?> </p>
+    <br><br>
 
 
    
