@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "preco" => $preco,
         "qtdEstoque" => $qtdEstoque,
 
-        "Fabricante" => [
+        "fabricante" => [
             "nomeF" => $nomeF,
             "pais" => $pais,
         ],
@@ -101,8 +101,8 @@ $alunos = json_decode($conteudoJson, true);
             <p>País de Origem: <?= $produto["pais"] ?> </p>
             <p>Marca: <?= $produto["marca"] ?> </p>
             <p>produto: <?= $produto["nomeP"] ?> </p>
-            <p>Preço: <?= $produto["preco"] ?> </p>
-            <p>Quantidade em estoque: <?= $produto["qtdEstoque"] ?> </p>
+            <p>Preço: <?= $produto["fabricante"]["preco"] ?> </p>
+            <p>Quantidade em estoque: <?= $produto["fabricante"]["qtdEstoque"] ?> </p>
             <br><br>
 
 
