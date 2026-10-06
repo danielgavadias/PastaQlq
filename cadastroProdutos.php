@@ -97,12 +97,12 @@ $alunos = json_decode($conteudoJson, true);
         <?php foreach ($produtos as $produto) { ?>
 
             <br><br>
-            <p>Fabricante: <?= $produto["nomeF"] ?> </p>
-            <p>País de Origem: <?= $produto["pais"] ?> </p>
+            <p>Fabricante: <?= $produto["fabricante"]["nomeF"] ?> </p>
+            <p>País de Origem: <?= $produto["fabricante"]["pais"] ?> </p>
             <p>Marca: <?= $produto["marca"] ?> </p>
             <p>produto: <?= $produto["nomeP"] ?> </p>
-            <p>Preço: <?= $produto["fabricante"]["preco"] ?> </p>
-            <p>Quantidade em estoque: <?= $produto["fabricante"]["qtdEstoque"] ?> </p>
+            <p>Preço: <?= $produto["preco"] ?> </p>
+            <p>Quantidade em estoque: <?= $produto["qtdEstoque"] ?> </p>
             <br><br>
 
 
