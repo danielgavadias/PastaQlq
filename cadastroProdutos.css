@@ -8,10 +8,13 @@
 
 h1, p
 {
+    
+    padding: 10px;
     color: #60720d;
 }
 
 h2{
+    padding: 5px;
     color: #663f0b;
 }
 
