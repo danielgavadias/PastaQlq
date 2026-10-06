@@ -57,6 +57,7 @@ $alunos = json_decode($conteudoJson, true);
 <body>
     <form method="POST">
 
+    <main>
         <h1>CADASTRO DE PRODUTOS</h1>
 
 
@@ -91,6 +92,7 @@ $alunos = json_decode($conteudoJson, true);
         </p>
 
         <button type="submit">ENVIAR</button>
+    </main>
 
         <h1>PRODUTOS CADASTRADOS: </h1>
 
