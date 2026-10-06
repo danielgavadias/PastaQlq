@@ -24,3 +24,11 @@ p
     color: #9bb7cf;
 }
 
+button
+{
+    background-color: #60720d;
+    border-radius: 8px;
+    color: #9bb7cf;
+    border-color: #7c4d0e;
+    border: 2px;
+}
