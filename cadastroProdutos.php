@@ -41,7 +41,6 @@ $alunos = json_decode($conteudoJson, true);
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -51,8 +50,6 @@ $alunos = json_decode($conteudoJson, true);
     <title>Cadastro Produtos</title>
     <link rel="stylesheet" href="cadastroProdutos.css">
 </head>
-
-
 
 <body>
     <form method="POST">
@@ -79,6 +76,10 @@ $alunos = json_decode($conteudoJson, true);
             <input type="text" name="nomeP">
         </p>
 
+        <p>Categoria:
+            <input type="text" name="categoria">
+        </p>
+
         <p>Marca:
             <input type="text" name="marca">
         </p>
@@ -101,23 +102,13 @@ $alunos = json_decode($conteudoJson, true);
             <br><br>
             <p>Fabricante: <?= $produto["fabricante"]["nomeF"] ?> </p>
             <p>País de Origem: <?= $produto["fabricante"]["pais"] ?> </p>
+            <p>Nome do produto: <?= $produto["nomeP"] ?> </p>
+            <p>Categoria: <?= $produto["categoria"] ?> </p>
             <p>Marca: <?= $produto["marca"] ?> </p>
-            <p>produto: <?= $produto["nomeP"] ?> </p>
             <p>Preço: <?= $produto["preco"] ?> </p>
             <p>Quantidade em estoque: <?= $produto["qtdEstoque"] ?> </p>
+            <p>Valor total do estoque: <?= $produto["qtdEstoque"]*$produto["preco"] ?> </p>
             <br><br>
-
-
-
-
-
-
-
-
-
-
-
-
 
         <?php } ?>
 
