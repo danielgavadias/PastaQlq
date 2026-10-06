@@ -3,17 +3,17 @@
     font-family: Arial;
     margin: 0;
     padding: 0;
-    background-color: #353535;
+    background-color: #1a1a1a;
 }
 
-h1
+h1, p
 {
-    color: #375b94;
+    color: #60720d;
 }
-p
+/* p
 {
     color: #00ffff;
-}
+} */
 
 
 
