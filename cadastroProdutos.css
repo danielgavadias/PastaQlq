@@ -6,7 +6,7 @@
     background-color: #1a1a1a;
 }
 
-h1, p
+h1
 {
     
     padding: 8px;
@@ -18,6 +18,8 @@ h2{
     color: #7c4d0e;
 }
 
-
-
+p
+{
+    color: #f0f8ff;
+}
 
