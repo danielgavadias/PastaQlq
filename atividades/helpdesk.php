@@ -42,19 +42,18 @@
     <p>Nome do funcionario solicitante: </p><input type="text">
     
     <p>Setor da empresa: </p>
-    <button>SETOR A</button>
-    <button>SETOR B</button>
-    <button>SETOR C</button>
-    <button>SETOR D</button>
-    
+    <button> SETOR A <?$prioridade = "baixa" ?></button>
+    <button> SETOR B <?$prioridade = "baixa" ?></button>
+    <button> SETOR C <?$prioridade = "baixa" ?></button>
+    <button> SETOR D <?$prioridade = "baixa" ?></button>
     <p>Equipamento afetado: </p><input type="text">
     
     <p>Descrição do problema: </p><input type="text">
     
     <p>Prioridade: </p>
-    <button>BAIXA</button>
-    <button>MEDIANA</button>
-    <button>ALTA</button>
-    <button>EMERGÊNCIA</button>
+    <button> BAIXA <?$prioridade = "baixa" ?></button>
+    <button> MEDIANA <?$prioridade = "mediana" ?></button>
+    <button> ALTA <?$prioridade = "alta" ?></button>
+    <button> EMERGÊNCIA <?$prioridade = "emergencia" ?></button>
 
 </html>
