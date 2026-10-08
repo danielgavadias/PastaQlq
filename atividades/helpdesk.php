@@ -5,13 +5,21 @@
     $nome = $_POST["nome"];
     $setor = $_POST["setor"];
     $equipAfet = $_POST["equipAfet"];
+    $pc = $_POST["pc"];
     $descricao = $_POST["descricao"];
     $prioridade = $_POST["prioridade"];
 
+    $novoChamados = [
 
-
-
-
+        "nome" => $nome,
+        "setor" => $setor,
+        "equipAfet" => [
+            "pc" => $pc,
+            "maquina" => $maquina,
+        ],
+        "descricao" => $descricao,
+        "prioridade" => $prioridade,
+    ]
 
 
 
@@ -44,5 +52,9 @@
     <p>Descrição do problema: </p><input type="text">
     
     <p>Prioridade: </p>
+    <button>BAIXA</button>
+    <button>MEDIANA</button>
+    <button>ALTA</button>
+    <button>EMERGÊNCIA</button>
 
 </html>
