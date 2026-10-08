@@ -34,10 +34,10 @@
     <p>Nome do funcionario solicitante: </p><input type="text">
     
     <p>Setor da empresa: </p>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
+    <button>SETOR A</button>
+    <button>SETOR B</button>
+    <button>SETOR C</button>
+    <button>SETOR D</button>
     
     <p>Equipamento afetado: </p><input type="text">
     
