@@ -49,9 +49,9 @@
         $chamados,
         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
     );
-
+}
     file_put_contents(__DIR__ . "/dados/chamados.json", $jsonAtualizado);
-    }
+
 ?>
 <!DOCTYPE html>
 <html lang="PT-BR">
@@ -81,9 +81,9 @@
     <button> ROTEADOR DE WI-FI <?$prioridade = "roteador" ?></button>
     
     <p>Prioridade: </p>
-    <button> BAIXA <?$prioridade = "baixa" ?></button>
-    <button> MEDIANA <?$prioridade = "mediana" ?></button>
-    <button> ALTA <?$prioridade = "alta" ?></button>
+    <button> BAIXA <?= $prioridade = "baixa" ?></button>
+    <button> MEDIANA <?= $prioridade = "mediana" ?></button>
+    <button> ALTA <?= $prioridade = "alta" ?></button>
     <button> EMERGÊNCIA <?$prioridade = "emergencia" ?></button>
     
     <p>Descrição do problema: </p><input type="text">
@@ -91,4 +91,30 @@
     <br><br><br>
     <button type="submit">ENVIAR CHAMADO</button>
 
+    <p><?php foreach ($chamados as $chamado){ ?></p>
+    
+    <h1>CHAMADO: </h1>
+    <p>Funcionário: <?= $chamado["Setor"] ?></p>
+    <p>Setor: <?= $chamado["Setor"]?></p>
+    
+    <p>Equipamento afetado: 
+        <?php if($chamado["EquipAfet"]["pc"] != NULL)
+        {
+        echo $chamado["EquipAfet"]["pc"];
+        }
+        else
+        {
+            if($chamado["EquipAfet"]["maquina"] != NULL)
+            {
+                echo $chamado["EquipAfet"]["maquina"];
+            }
+            else
+            {
+                echo $chamado["EquipAfet"]["roteador"];
+            }
+        };
+        ?>
+    </p>
+
+<?php } ?>
 </html>
