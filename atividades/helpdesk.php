@@ -50,7 +50,7 @@
         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
     );
 
-    file_put_contents(__DIR__ . "/dados/chamados.json");
+    file_put_contents(__DIR__ . "/dados/chamados.json", $jsonAtualizado);
     }
 ?>
 <!DOCTYPE html>
@@ -75,7 +75,7 @@
     <button> SETOR C <?$prioridade = "setorC" ?></button>
     <button> SETOR D <?$prioridade = "setorD" ?></button>
     
-    <p>Equipamento afetado: </p><input type="text">
+    <p>Equipamento afetado: </p>
     <button> COMPUTADOR <?$prioridade = "pc" ?></button>
     <button> MÁQUINA <?$prioridade = "maquina" ?></button>
     <button> ROTEADOR DE WI-FI <?$prioridade = "roteador" ?></button>
