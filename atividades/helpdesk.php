@@ -14,7 +14,7 @@
     $descricao = $_POST["descricao"];
     $prioridade = $_POST["prioridade"];
 
-    $novoChamados = [
+    $novoChamado = [
 
         "nome" => $nome,
         
@@ -38,11 +38,19 @@
             "mediana" => $mediana,
             "alta" => $alta,
             "emergencia" => $emergencia,
-        ]
-    ]
+        ],
+    ];
 
+    $conteudoJson = file_get_contents(__DIR__. "dados/dados/chamadas.json");
+    $chamados = json_decode($conteudoJson, true);
+    $produtos[] = $novoChamado;
 
+    $jsonAtualizado = json_encode(
+        $chamados,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
 
+    file_put_contents(__DIR__ . "/dados/chamados.json");
     }
 ?>
 <!DOCTYPE html>
