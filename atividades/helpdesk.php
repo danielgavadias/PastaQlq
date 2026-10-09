@@ -80,12 +80,15 @@
     <button> MÁQUINA <?$prioridade = "maquina" ?></button>
     <button> ROTEADOR DE WI-FI <?$prioridade = "roteador" ?></button>
     
-    <p>Descrição do problema: </p><input type="text">
-    
     <p>Prioridade: </p>
     <button> BAIXA <?$prioridade = "baixa" ?></button>
     <button> MEDIANA <?$prioridade = "mediana" ?></button>
     <button> ALTA <?$prioridade = "alta" ?></button>
     <button> EMERGÊNCIA <?$prioridade = "emergencia" ?></button>
+    
+    <p>Descrição do problema: </p><input type="text">
+
+    <br>
+    <button type="submit">ENVIAR CHAMADO</button>
 
 </html>
