@@ -63,28 +63,27 @@
 </head>
 
 <body>
-    
-</body>
+<form method="POST">
     <h1>CHAMADOS TÉCNICOS</h1>
 
     <p>Nome do funcionario solicitante: </p><input type="text">
     
     <p>Setor da empresa: </p>
-    <button> SETOR A <?$prioridade = "setorA" ?></button>
-    <button> SETOR B <?$prioridade = "setorB" ?></button>
-    <button> SETOR C <?$prioridade = "setorC" ?></button>
-    <button> SETOR D <?$prioridade = "setorD" ?></button>
+    <button type="name"> SETOR A <?$setor = "setorA" ?></button>
+    <button type="name"> SETOR B <?$setor = "setorB" ?></button>
+    <button type="name"> SETOR C <?$setor = "setorC" ?></button>
+    <button type="name"> SETOR D <?$setor = "setorD" ?></button>
     
     <p>Equipamento afetado: </p>
-    <button> COMPUTADOR <?$prioridade = "pc" ?></button>
-    <button> MÁQUINA <?$prioridade = "maquina" ?></button>
-    <button> ROTEADOR DE WI-FI <?$prioridade = "roteador" ?></button>
+    <button type="name"> COMPUTADOR <?$prioridade = "pc" ?></button>
+    <button type="name"> MÁQUINA <?$prioridade = "maquina" ?></button>
+    <button type="name"> ROTEADOR DE WI-FI <?$prioridade = "roteador" ?></button>
     
     <p>Prioridade: </p>
-    <button> BAIXA <?= $prioridade = "baixa" ?></button>
-    <button> MEDIANA <?= $prioridade = "mediana" ?></button>
-    <button> ALTA <?= $prioridade = "alta" ?></button>
-    <button> EMERGÊNCIA <?$prioridade = "emergencia" ?></button>
+    <button type="name"> BAIXA <?= $prioridade = "baixa" ?></button>
+    <button type="name"> MEDIANA <?= $prioridade = "mediana" ?></button>
+    <button type="name"> ALTA <?= $prioridade = "alta" ?></button>
+    <button type="name"> EMERGÊNCIA <?$prioridade = "emergencia" ?></button>
     
     <p>Descrição do problema: </p><input type="text">
 
@@ -117,4 +116,5 @@
     </p>
 
 <?php } ?>
+</form></body>
 </html>
