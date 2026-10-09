@@ -88,7 +88,7 @@
     
     <p>Descrição do problema: </p><input type="text">
 
-    <br>
+    <br><br><br>
     <button type="submit">ENVIAR CHAMADO</button>
 
 </html>
